@@ -1,0 +1,61 @@
+*{
+  margin:0 ;
+  padding: 0;
+
+}
+.main{
+  width:48rem;
+  height:35rem;
+  border: 0.2px solid rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.3);
+  /* opacity: 30%; */
+  margin-left: 550px;
+  margin-top: 250px;
+  text-align: center;
+  border-radius: 25px;
+  /* box-shadow: 10px 10px  20px rgba(0, 0,0, 0.3); */
+}
+/* .main>.form-control{
+width:100px;
+height:20px;
+} */
+.form-control{
+  height: 3rem;
+  width: 10rem;
+}
+.text-center{
+  color: #ffff;
+  margin-top: 2rem;
+}
+body{
+  background: url(https://e1.pxfuel.com/desktop-wallpaper/209/1020/desktop-wallpaper-best-5-data-science-backgrounds-on-hip-data-science.jpg);
+}
+.input-group-text{
+height: 3rem;
+width: 2rem;
+}
+.input-group{
+  width: 30rem;
+}
+
+
+.btn{
+  display: grid;
+  justify-content: center;
+ background-color: rgb(59, 51, 82);
+ width: 25rem;
+ height: 5rem;
+ color: #ffff;
+ 
+}
+.main>.btn.btn-primary:hover {
+  /* CSS properties for hover state */
+  /* For example, change the background color and text color */
+  background-color: red;
+  color: white;
+}
+.btn:hover {
+  color:#ffff;
+  background-color:rgb(59, 51, 82);
+}
+

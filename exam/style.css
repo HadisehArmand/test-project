@@ -44,4 +44,12 @@ body {
     border: 0.1rem solid #8c89af;
     color: #ffff;
 }
-
+.disable-link{
+  text-decoration: none;
+}
+.btn:hover {
+  color:#ffff;
+  background-color:rgb(59, 51, 82);
+  color: black;
+  text-decoration: none;
+}
