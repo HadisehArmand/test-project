@@ -3,23 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login page</title>
+    <title>SignUp page</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="sign.css" />
+    <link rel="stylesheet" href="sign.css">
   </head>
   <body>
     <div class="container-fluid d-flex justify-content-center mt-5">
       <div class="row main">
         <div class="row d-flex justify-content-center">
-          <h1 class="text-center">Signin</h1>
-          <div class="input-group mb-3 d-flex justify-content-center">
+          <h1 class="text-center">Sign Up</h1>
+          <div class="input-group mb-3  d-flex justify-content-center">
             <span class="input-group-text" id="basic-addon1">F</span>
             <input
+            id="FI"
               type="text"
               class="form-control"
               placeholder="FirstName"
@@ -32,6 +33,7 @@
           <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">L</span>
             <input
+            id="LI"
               type="text"
               class="form-control"
               placeholder="LastName"
@@ -41,50 +43,53 @@
           </div>
         </div>
         <div class="row d-flex justify-content-center">
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">@</span>
-            <input
-              type="email"
-              class="form-control"
-              placeholder="email"
-              aria-label="email"
-              aria-describedby="basic-addon1"
-            />
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input
+              id="EI"
+                type="email"
+                class="form-control"
+                placeholder="email"
+                aria-label="email"
+                aria-describedby="basic-addon1"
+              />
+            </div>
           </div>
-        </div>
+          <div class="row d-flex justify-content-center">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">P</span>
+              <input
+              id="PI"
+                type="password"
+                class="form-control"
+                placeholder="password"
+                aria-label="password"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">A</span>
+              <input
+              id="AI"
+                type="text"
+                class="form-control"
+                placeholder="Avatar"
+                aria-label="Avatar"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
         <div class="row d-flex justify-content-center">
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">P</span>
-            <input
-              type="password"
-              class="form-control"
-              placeholder="password"
-              aria-label="password"
-              aria-describedby="basic-addon1"
-            />
-          </div>
+          <div class="col-6  d-flex justify-content-evenly">
+            <input class="btn" type="button" value="SignUp" onclick="submitDATA()">
         </div>
-        <div class="row d-flex justify-content-center">
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">A</span>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Avatar"
-              aria-label="Avatar"
-              value="Avatar"
-              aria-describedby="basic-addon1"
-            />
-          </div>
-        </div>
-        <div class="row d-flex justify-content-center">
-          <div class="col-6 d-flex justify-content-evenly">
-            <input class="btn" type="button" value="Login" />
-          </div>
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="sign.js"></script>
+    <script src="../log/log.js"></script>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="signin.js"></script>
 </html>
