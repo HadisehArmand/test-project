@@ -10,6 +10,7 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
     crossorigin="anonymous"
   />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/lib">
   <link rel="stylesheet" href="add.css">
 </head>
 <body>
@@ -17,9 +18,10 @@
     <div class="main">
         <div class="main-add">
             <div class="row d-flex justify-content-start mt-4">
-                <div class="col-2">
+                <div class="col-5">
                 <div class="input-group mb-3">
                   <span class="input-group-text" id="basic-addon1">+</span>
+                 <a href="../../signin/sign.html">
                   <input
                     type="submit"
                     class="form-control btn btn-success"
@@ -28,6 +30,7 @@
                     value="add user"
                     aria-describedby="basic-addon1"
                   />
+                  </a>
                 </div>
             </div>
               </div>
@@ -55,8 +58,9 @@
                     <td>@mdo</td>
                     <td>@mdo</td>
                     <td>
-                      <a class="disable-link" title="edit" href="#"><img class="img-link2" src="https://img.icons8.com/?size=512&id=71201&format=png"></a>
-                      <a class="disable-link" title="delete" href="#"><img class="img-link"src="https://img.icons8.com/?size=512&id=g8W7KYbM7nK3&format=png"></a>
+                      <a class="disable-link btn" data-bs-toggle="modal" data-bs-target="#exampleModal" title="edit" href="#"><img class="img-link2" src="https://img.icons8.com/?size=512&id=71201&format=png"></a>
+                      <a class="disable-link btn " data-bs-toggle="modal" data-bs-target="#exampleModal" title="delete" href=""><img class="img-link"src="https://img.icons8.com/?size=512&id=g8W7KYbM7nK3&format=png"></a>
+                      
                     </td>
                   </tr>
                 </tbody>
